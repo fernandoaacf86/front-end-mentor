@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
-/* font-family: 'Big Shoulders Display', cursive;
-font-family: 'Lexend Deca', sans-serif; */
-
 :root {
     --Bright-orange: hsl(31, 77%, 52%);
     --Dark-cyan: hsl(184, 100%, 22%);
@@ -70,14 +67,17 @@ button {
 
 .container-1 section:nth-of-type(1) button {
     color: var(--Bright-orange);
+    border: 1px solid var(--Very-light-gray);  
 }
 
 .container-1 section:nth-of-type(2) button {
     color: var(--Dark-cyan);
+    border: 1px solid var(--Very-light-gray);
 }
 
 .container-1 section:nth-of-type(3) button {
     color: var(--Very-dark-cyan);
+    border: 1px solid var(--Very-light-gray);
 }
 
 .container-1 section button:hover {
@@ -96,8 +96,4 @@ button {
     .container-1 {
         width: 90%;
     }
-
-    /* body {
-        height: fit-content;
-    } */
 }
