@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: var(-Dark-blue);
+    min-height: calc(100vh - 1px);
+    background-color: var(--Pale-blue);
+}
+
+h5 {
+    color: var(--Dark-blue);
+    font-weight: 900;
+    font-size: 16px;
+}
+
+h4 {
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+
+p {
+    color: var(--Desaturated-blue);
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    max-width: 400px;
+    border-radius: 2rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.a-plan {
+    background-color: var(--Very-pale-blue);
+    border-radius: 0.5rem;
+}
+
+.l-change {
+    text-decoration: underline;
+    color: var(--Bright-blue);
+    font-weight: 700;
+}
+
+
+button[type="submit"] {
+    background-color: var(--Bright-blue);
+    border-radius: 0.5rem;
+    color: var(--Very-pale-blue);
+    font-weight: 700;
+    border: none;
+    box-shadow: 0px 15px 30px  var(--Pale-blue);
+}
+
+button[type="reset"] {
+    background-color: transparent;
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+    border: none;
+
+}
+
+/* HOVERs */
+
+button[type="submit"]:hover {
+    background-color: hsl(245, 75%, 52%, 0.8);
+}
+
+button[type="reset"]:hover {
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+
+.l-change:hover {
+    color: hsl(245, 75%, 52%, 0.7);
+    text-decoration: none;
+}
