@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+    /* ### Primary */
+
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    /* ### Neutral */
+
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: calc(100vh - 1px);
+    background-color: var(--Light-grayish-blue);
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+main {
+    width: 1160px;
+    height: 620px;
+}
+
+main article:first-of-type {
+    height: 55%;
+}
+
+main article:last-of-type {
+    height: 45%;
+}
+
+main section:first-of-type {
+    width: 76%;
+    height: 100%;
+}
+
+main section:last-of-type {
+    width: 24%;
+    height: 100%;
+}
+
+img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.8rem;
+}
+
+/* h1 and h2 cards colors by default..
+i changed the color for the two white ones */
+
+h1 {
+    font-size: 0.9rem;
+    color: var(--White);
+    font-size: 600;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: var(--White);
+    font-size: 600;
+}
+
+/* Frontend Mentor Styles */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* -------------------------------- */
+
+
+/* Cards */
+
+.card-01 {
+    background: url(../images/bg-pattern-quotation.svg) no-repeat 85% 0%;
+    background-color: var(--Moderate-violet);
+    width: 70%;
+    border-radius: 1rem;
+}
+
+.card-02 {
+    background-color: var(--Very-dark-grayish-blue);
+    width: 30%;
+    border-radius: 1rem;
+}
+
+.card-03 {
+    background-color: var(--White);
+    width: 30%;
+    border-radius: 1rem;
+}
+
+.card-04 {
+    background-color: var(--Very-dark-blackish-blue);
+    width: 70%;
+    border-radius: 1rem;
+}
+
+.card-05 {
+    background-color: var(--White);
+    border-radius: 1rem;
+    height: 100% !important;
+}
+
+/* cards 1, 2 and 4 cards colors  */
+
+.card-01 h1 + p,
+.card-02 h1 + p,
+.card-04 h1 + p {
+    color: hsl(0, 0%, 100%, 50%);
+}
+.p1-70 { /* for Review paragraphs in cards 1, 2 and 4 */
+    color: hsl(0, 0%, 100%, 70%); 
+}
+
+
+/* cards 3 and 5 colors */
+
+.card-03 h1, .card-03 h2,
+.card-05 h1, .card-05 h2 {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.card-03 h1 + p,
+.card-05 h1 + p {
+    color: hsl(217, 19%, 35%, 50%);
+} 
+
+ .p2-70 { /* { for Review paragraphs in cards 3 and 5 */
+    color: hsl(217, 19%, 35%, 70%);
+}
+
+.card-01, .card-02, .card-03,
+.card-04, .card-05 {
+    box-shadow: 10px 10px 15px var(--Light-gray);
+}
+
+
+/* -------------------------------- */
+
+/* Medias q */
+
+@media (max-width: 991.98px) {
+
+    main {
+        width: auto;
+        max-width: 400px;
+        min-width: 300px;
+        height: auto;
+    }
+
+    main section:first-of-type {
+        width: 100%;
+        height: auto;
+    }
+    
+    main section:last-of-type {
+        width: 100%;
+        height: auto;
+    }
+    
+    main section:first-of-type article:first-of-type {
+        height: auto;
+    }
+    
+    main section:first-of-type article:last-of-type {
+        height: auto;
+    }
+
+    .card-01, .card-02,
+    .card-03, .card-04, .card-05 {
+        width: 100%;
+    }
+}
