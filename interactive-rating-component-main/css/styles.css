@@ -105,3 +105,8 @@ button:hover {
 }
 
 
+@media (max-width: 400px) {
+    main {
+        max-width: 340px;
+    }
+}
